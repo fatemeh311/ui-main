@@ -1,0 +1,71 @@
+.sign-in-up {
+    background-image: url(/images/sign-in-up-bg.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 35%;
+    /* margin-top: 118px; */
+    margin-top: 30px;
+    form {
+      margin-top: -10px;
+      .single-input {
+        margin-bottom: 21px;
+        label {
+          font-weight: 500;
+        }
+        input {
+          &:focus {
+            border: 1px solid #b0baf1;
+            box-shadow: none;
+          }
+        }
+        p {
+          span {
+            color: var(--hover-color);
+          }
+        }
+        .password-show {
+          padding: 0 20px;
+          background: #f5faff;
+          border: 1px solid #eef1ff;
+          border-radius: 5px;
+          input {
+            padding: 0;
+            padding-right: 15px;
+            border: none;
+            line-height: 1;
+          }
+          img {
+            cursor: pointer;
+          }
+          &:focus-within {
+            border: 1px solid #b0baf1;
+          }
+        }
+        .phone-number {
+          padding: 0 20px;
+          background: #f5faff;
+          border: 1px solid #eef1ff;
+          border-radius: 5px;
+          input {
+            padding: 0;
+            padding-left: 15px;
+            padding-right: 15px;
+            border: none;
+            line-height: 1;
+          }
+          img {
+            cursor: pointer;
+          }
+          &:focus-within {
+            border: 1px solid #b0baf1;
+          }
+        }
+      }
+    }
+    .sign-in-up .form-content {
+        padding: 60px 0 !important;
+      }
+      .sign-in-up form .single-input .phone-number input {
+        padding-left: 30px;
+      }
+}
